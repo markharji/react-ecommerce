@@ -1,7 +1,7 @@
 .cart{
     display:flex;
     background-color: darkgray;
-    width: 80%;
+    width: 60%;
     height:120px;
     margin-bottom: 10px;
 }
@@ -21,7 +21,7 @@
     flex-direction: column;
     width: 60%;
     background: #7689A9;
-    font-size:20px;
+    font-size:16px;
     padding-left: 10px;
     color:white;
 }
@@ -46,6 +46,6 @@
 
   
 .cart-header{
-    width: 80%;
+    width: 60%;
     background-color:#804015;
 }

@@ -18,7 +18,7 @@ function App() {
     {"link":"./ads/drink.jpg","content":"Feel Refresh with this Amazing Drink"},
     {"link":"./ads/game.png","content":"Play and Have Fun with This trending game right now"},
     {"link":"./ads/boracay.jpg","content":"Visit the New Clean and Beautiful Boracay"},
-    {"link": "./ads/resort.jpg","content":"Your Comfort and Happiness is our Priority"},
+    {"link":"./ads/resort.jpg","content":"Your Comfort and Happiness is our Priority"},
     {"link":"./ads/watch.jpg","content":"You know that Time is Gold, Have a Gold Made Watch"},
     {"link":"./ads/japan.jpg","content":"Visit the most famous country in Asia"},
     {"link":"./ads/pizza.jpg","content":"Pizza guys, You want? Affordable Price"},]
@@ -253,7 +253,7 @@ function App() {
               backgroundColor:'rgba(0, 0, 0, 0.3)'
             },
             content:{
-              width:'600px',
+              width:'60vw',
               top: '50%',
               left: '50%',
              height:'80%',
@@ -294,11 +294,12 @@ function App() {
               backgroundColor:'rgba(0, 0, 0, 0.3)'
             },
             content:{
-              width:'600px',
+              width:'60vw',
               top: '50%',
               left: '50%',
               right: 'auto',
               bottom: 'auto',
+              height:'60%',
               marginRight: '-50%',
               transform: 'translate(-50%, -50%)',
               paddingTop:'5px',

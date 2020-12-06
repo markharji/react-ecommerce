@@ -34,6 +34,7 @@ function App() {
   const [prevAds , setPrevAds]  = useState(0)
   const [totalPrice, setTotalPrice] = useState(0)
   const [checkOutItems,setCheckOutItems] = useState(false)
+  const [startLoading,setStartLoading] = useState(true)
 
 
  
@@ -242,8 +243,15 @@ function App() {
     setCart([...tempCart2])
   }
 
+  if(startLoading){
+    
+    setTimeout(()=>{
+      setStartLoading(false)
+    },3000)
+    return (<><div className="loader">Loading...</div></>)
+  }
 
-
+  if(!startLoading){
   return (
     <>
         <Header  cartToggle={cartToggle} cartLength={cart.length}/>
@@ -356,5 +364,5 @@ function App() {
     </>
     
    );
-}
+}}
 export default App;

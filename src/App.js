@@ -276,7 +276,7 @@ function App() {
           <div>
           Total Price
           </div>
-          <div>{totalPrice}</div>
+          <div>${totalPrice.toFixed(2)}</div>
           </div>
           <div className="check-btn">
               <button className="check-outbtn" onClick={clearCart}>Checkout</button>
@@ -294,7 +294,7 @@ function App() {
               backgroundColor:'rgba(0, 0, 0, 0.3)'
             },
             content:{
-              width:'60vw',
+              width:'45vw',
               top: '50%',
               left: '50%',
               right: 'auto',
@@ -323,13 +323,13 @@ function App() {
 
         
         <div className="sort-items"> 
-                <select className="sort-select" defaultValue={"Name"} onChange={e => sortData(e)}>
+                <select className="sort-select sort-by" defaultValue={"Name"} onChange={e => sortData(e)}>
                   <option value="Date">Sort By Date</option>
                   <option value="Name">Sort By Name</option>
                   <option value="Price">Sort By Price</option>
                   <option value="Size">Sort By Size</option>
                 </select>
-                <select className="sort-select" defaultValue={sortOrder} onChange ={e => sortDataOrder(e)} >
+                <select className="sort-select sort-order" defaultValue={sortOrder} onChange ={e => sortDataOrder(e)} >
                 <option value="Ascending">Ascending</option>
                   <option value="Descending">Descending</option>
                 </select>

@@ -4,13 +4,13 @@ import './ItemList.css'
 
 
 
-export default function ItemList({ items,addToCart} ) {
+export default function ItemList({ items,addToCart , cart} ) {
 
 
     return (
         items.map(item => {
 
-           return <Item item = {item} key={item.face} addToCart = {addToCart} />
+           return <Item item = {item} key={item.face} addToCart = {addToCart} cart={cart}/>
        })
     )
 }

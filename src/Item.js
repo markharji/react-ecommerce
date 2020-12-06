@@ -1,39 +1,27 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import './Item.css'
 
-export default function Item({ item , addToCart } ) {
+export default function Item({ item , addToCart ,cart} ) {
     const [added,setAdded] = useState(false)
     const [labelText,setLabelText] = useState("Add To Cart")
     const [backDis,setBackDis] = useState("")
   
 
-    // useEffect(()=>{
-    //   const tempCart = [...cart]
-    //   const checkingOne = tempCart.filter(tempData => tempCart.face === item.face).length
-    //   if(checkingOne === 1) {
-    //     setBackDis("#D4C26A")
-    //     setLabelText("Added")
-    //     setAdded(true)
-    //   }else{
-    //     setBackDis("")
-    //     setLabelText("Add to Cart")
-    //     setAdded(false)
-    //   }
-    // },[])
+    useEffect(()=>{
+        if(cart.length === 0){
+            setBackDis("")
+            setLabelText("Add To Cart")
+            setAdded(false)
+        }
+    },[])
 
-    // useEffect(()=>{
-      
-    //   const tempCart = [...cart]
-    //   const checkingOne = tempCart.filter(tempData => tempCart.face === itemFace)
-    //   const lengthCheck = checkingOne.length
-     
-    //   if(lengthCheck === 1) {
-    //     setBackDis("#D4C26A")
-    //     setLabelText("Added")
-    //     setAdded(true)
-    //   }
-    // },[cart])
-
+    useEffect(()=>{
+        if(cart.length === 0){
+            setBackDis("")
+            setLabelText("Add To Cart")
+            setAdded(false)
+        }
+    },[cart])
     
 
     const handleAddToCart = (e) =>{

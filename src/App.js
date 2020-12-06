@@ -12,16 +12,16 @@ import InfiniteScroll from 'react-infinite-scroll-component';
 function App() {
 
   const adsLink = [
-    {"link":"/ads/burger.png","content":"Order and Eat Best Burger In Town"},
-    {"link":"/ads/clean.jpg","content":"Eat Clean And Healty Food"},
-    {"link":"/ads/cocacola.jpg","content":"Break your Thirst with Coca Cola Drink"},
-    {"link":"/ads/drink.jpg","content":"Feel Refresh with this Amazing Drink"},
-    {"link":"/ads/game.png","content":"Play and Have Fun with This trending game right now"},
-    {"link":"/ads/boracay.jpg","content":"Visit the New Clean and Beautiful Boracay"},
-    {"link": "/ads/resort.jpg","content":"Your Comfort and Happiness is our Priority"},
-    {"link":"/ads/watch.jpg","content":"You know that Time is Gold, Have a Gold Made Watch"},
-    {"link":"/ads/japan.jpg","content":"Visit the most famous country in Asia"},
-    {"link":"/ads/pizza.jpg","content":"Pizza guys, You want? Affordable Price"},]
+    {"link":"./ads/burger.png","content":"Order and Eat Best Burger In Town"},
+    {"link":"./ads/clean.jpg","content":"Eat Clean And Healty Food"},
+    {"link":"./ads/cocacola.jpg","content":"Break your Thirst with Coca Cola Drink"},
+    {"link":"./ads/drink.jpg","content":"Feel Refresh with this Amazing Drink"},
+    {"link":"./ads/game.png","content":"Play and Have Fun with This trending game right now"},
+    {"link":"./ads/boracay.jpg","content":"Visit the New Clean and Beautiful Boracay"},
+    {"link": "./ads/resort.jpg","content":"Your Comfort and Happiness is our Priority"},
+    {"link":"./ads/watch.jpg","content":"You know that Time is Gold, Have a Gold Made Watch"},
+    {"link":"./ads/japan.jpg","content":"Visit the most famous country in Asia"},
+    {"link":"./ads/pizza.jpg","content":"Pizza guys, You want? Affordable Price"},]
 
   const [items , setItems] = useState([])
   const [sortBy, setSortBy] = useState("Name")
